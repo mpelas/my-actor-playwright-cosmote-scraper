@@ -14,6 +14,8 @@ import  router  from './routes.js';
 
 // Initialize the Apify SDK
 await Actor.init();
+  // One-time per-run charge event (pay-per-event monetization)
+  await Actor.charge({ eventName: 'run_started', count: 1 });
 
 
 
