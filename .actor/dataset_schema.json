@@ -1,0 +1,24 @@
+{
+    "actorSpecification": 1,
+    "fields": {
+        "type": "object"
+    },
+    "views": {
+        "overview": {
+            "title": "Plans",
+            "transformation": {
+                "fields": ["name", "price", "url", "page_url", "scraped_at"]
+            },
+            "display": {
+                "component": "table",
+                "properties": {
+                    "name": {"label": "Plan", "format": "text"},
+                    "price": {"label": "Price", "format": "text"},
+                    "url": {"label": "URL", "format": "link"},
+                    "page_url": {"label": "Source page", "format": "link"},
+                    "scraped_at": {"label": "Scraped at", "format": "date"}
+                }
+            }
+        }
+    }
+}

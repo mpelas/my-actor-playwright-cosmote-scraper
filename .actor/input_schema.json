@@ -1,0 +1,34 @@
+{
+    "title": "Cosmote.gr Plans Scraper v2 - Input",
+    "type": "object",
+    "schemaVersion": 1,
+    "properties": {
+        "startUrls": {
+            "title": "Start URLs",
+            "type": "array",
+            "description": "Cosmote.gr eshop category URLs to scrape",
+            "editor": "requestListSources",
+            "prefill": [
+                {
+                    "url": "https://www.cosmote.gr/eshop/browse/Fixed-Plans/-/N-dccg6m?No=0&Nr=AND(product.language:Ελληνικά,OR(product.siteId:storeSiteUS),product.isVisibleOn:eShop,product.priceListPair:salePrices_listPrices)&Nrpp=48"
+                }
+            ]
+        },
+        "maxConcurrency": {
+            "title": "Max concurrency",
+            "type": "integer",
+            "description": "Maximum parallel pages (1-5)",
+            "default": 2,
+            "minimum": 1,
+            "maximum": 5
+        },
+        "proxy_configuration": {
+            "title": "Proxy configuration",
+            "type": "object",
+            "description": "Proxy settings for anti-bot protection",
+            "editor": "proxy",
+            "default": {"useApifyProxy": false}
+        }
+    },
+    "required": ["startUrls"]
+}

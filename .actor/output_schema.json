@@ -1,0 +1,11 @@
+{
+    "actorOutputSchemaVersion": 1,
+    "title": "Cosmote scraper v2 output",
+    "properties": {
+        "dataset": {
+            "type": "string",
+            "title": "Plans dataset",
+            "template": "{{links.apiDefaultDatasetUrl}}/items?view=overview"
+        }
+    }
+}

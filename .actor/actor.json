@@ -1,0 +1,18 @@
+{
+    "actorSpecification": 1,
+    "name": "my-actor-playwright-cosmote-scraper-v2",
+    "title": "Cosmote.gr Plans Scraper v2",
+    "description": "Scrapes Cosmote.gr eshop mobile/fixed plan pages with Playwright (cookie consent handling, pagination), proxy support, retries, and pay-per-event monetization ($0.005 per plan).",
+    "version": "2.0",
+    "buildTag": "latest",
+    "meta": {
+        "templateId": "js-crawlee-playwright-chrome",
+        "generatedBy": "mistral-large-4-0"
+    },
+    "input": "./input_schema.json",
+    "output": "./output_schema.json",
+    "storages": {
+        "dataset": "./dataset_schema.json"
+    },
+    "dockerfile": "./Dockerfile"
+}
