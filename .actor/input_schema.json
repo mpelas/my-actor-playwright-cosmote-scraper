@@ -27,7 +27,8 @@
             "type": "object",
             "description": "Proxy settings for anti-bot protection",
             "editor": "proxy",
-            "default": {"useApifyProxy": false}
+            "default": {"useApifyProxy": false},
+            "prefill": {"useApifyProxy": true, "apifyProxyGroups": ["RESIDENTIAL"]}
         }
     },
     "required": ["startUrls"]
